@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.androidshowtime.snapshatclone.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.androidshowtime.snapshatclone.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_imagePickerFragment"
+            app:destination="@id/imagePickerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_snapshatFragment"
+            app:destination="@id/snapshatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagePickerFragment"
+        android:name="com.androidshowtime.snapshatclone.ImagePickerFragment"
+        android:label="fragment_image_picker"
+        tools:layout="@layout/fragment_image_picker">
+        <action
+            android:id="@+id/action_imagePickerFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.androidshowtime.snapshatclone.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts">
+        <action
+            android:id="@+id/action_contactsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="snapChatTextMsg"
+            android:defaultValue="Hello"
+            app:argType="string" />
+        <argument
+            android:name="imageName"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/snapshatFragment"
+        android:name="com.androidshowtime.snapshatclone.SnapshatFragment"
+        android:label="fragment_snapshat"
+        tools:layout="@layout/fragment_snapshat">
+        <action
+            android:id="@+id/action_snapshatFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="imageName"
+            app:argType="string" />
+        <argument
+            android:name="imageURL"
+            app:argType="string" />
+        <argument
+            android:name="snapMsg"
+            app:argType="string" />
+        <argument
+            android:name="snapKey"
+            app:argType="string" />
+    </fragment>
+</navigation>

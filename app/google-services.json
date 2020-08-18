@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "568176937061",
+    "firebase_url": "https://snapchat-clone-54933.firebaseio.com",
+    "project_id": "snapchat-clone-54933",
+    "storage_bucket": "snapchat-clone-54933.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568176937061:android:e8c9b10f687574e27e1e8c",
+        "android_client_info": {
+          "package_name": "com.androidshowtime.snapshatclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568176937061-fpgcqiq7qtdsaqqv78nuqcd22dlg8p6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH0yDwjCqN-192kW6RygGgd2rPIcyRihY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568176937061-fpgcqiq7qtdsaqqv78nuqcd22dlg8p6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
