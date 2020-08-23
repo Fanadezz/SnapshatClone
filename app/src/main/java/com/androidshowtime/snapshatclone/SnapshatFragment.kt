@@ -75,4 +75,10 @@ class SnapshatFragment : Fragment() {
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+
+        Toast.makeText(activity, "Done", Toast.LENGTH_SHORT).show()
+    }
+
 }
