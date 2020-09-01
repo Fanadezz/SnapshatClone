@@ -63,7 +63,7 @@ class SnapshatFragment : Fragment() {
         requireActivity().onBackPressedDispatcher.addCallback(this) {
 
 
-            val currentUser = auth.currentUser!!
+            val currentUser = auth.currentUser!! 
 
             db.reference.child("users").child(currentUser.uid).child("snaps").child(args.snapKey)
                 .removeValue()
